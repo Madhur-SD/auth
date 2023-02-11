@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
-const authSchema = new Schema({
+const registerSchema = new Schema({
     
     name: {
       type:String  
@@ -20,5 +20,5 @@ const authSchema = new Schema({
     }
 })
 
-const authModel = mongoose.model('auth', authSchema)
+const authModel = mongoose.model('register', registerSchema)
 module.exports = authModel
