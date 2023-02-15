@@ -16,11 +16,11 @@ app.use('/auth', authRouter)
 app.use('/', (req, res) => {
     res.send({
         message: "Hey! I am in.",
-        port: 8061
+        port: 8062
     })
 })
-app.listen(8061, () => {
-    console.log("server listening at port 8061");
+app.listen(8062, () => {
+    console.log("server listening at port 8062");
 })
 // app.listen(8062, () => {
 //     console.log("server listening at port 8062");
