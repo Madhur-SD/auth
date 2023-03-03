@@ -26,3 +26,11 @@ exports.login = async (req,res) => {
         res.json(error.message)
     }
 }
+
+exports.response = async (req, res) => {
+    try {
+        res.render("../view/view.ejs")
+    } catch (error) {
+        res.json(error.message)
+    }
+}
